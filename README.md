@@ -16,13 +16,13 @@ These folders have excel files with the information from Naira for each register
 
 It also calls a csv file `list_sp_rv2` with two columns: `Species` and `Species_c`, where `Species` is the list of species identified in the pictures taken with the camera traps and `Species_c` is the verified list of these species names.
 
-Finally, for the creation of the DarwinCore output a csv file called TablaEspecies_filled.csv` generated in `/Salidas` and then manually filled, has the information about kingdom, phylum and taxonRank by species identified and is used to complete the information needed to generate de DarwinCore file.
+Finally, for the creation of the DarwinCore output a csv file called `TablaEspecies_filled.csv` generated in `/Salidas` and then manually filled, has the information about *kingdom*, *phylum* and *taxonRank* by species identified and is used to complete the information needed to generate de DarwinCore file.
 
 ## How to run
 
 1. Load the libraries that will be used. 
 
-2. Consider that in the code vectors names will start with v , dataframes with d , lists with l and functions with fun .
+2. Consider that in the code vectors names will start with *v* , dataframes with *d* , lists with *l* and functions with *fun* .
 
 3. Load the data from the folders in `/data` with the Naira outputs.
 

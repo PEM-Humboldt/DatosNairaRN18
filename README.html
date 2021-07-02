@@ -375,14 +375,36 @@ summary {
 <h2>Prerequisites</h2>
 <p>The R script calls a folder in <code>/data</code> that contains folders by sampling hexagon.</p>
 <p>These folders have excel files with the information from Naira for each register.</p>
-<p>It also calls a csv file <code>list_sp_rv2</code> with two columns: <code>Species</code> and <code>Species_c</code>, where <code>Species</code> is the list of species identified in the pictures and <code>Species_c</code> is the verified list of these species names.</p>
-<p>Finally, for the creation of the DarwinCore output a csv file called <code>TablaEspecies_filled.csv</code> generated in <code>/Salidas</code> and then manually filled, has the information about kingdom, phylum and taxonRank by species identified.</p>
+<p>It also calls a csv file <code>list_sp_rv2</code> with two columns: <code>Species</code> and <code>Species_c</code>, where <code>Species</code> is the list of species identified in the pictures taken with the camera traps and <code>Species_c</code> is the verified list of these species names.</p>
+<p>Finally, for the creation of the DarwinCore output a csv file called <code>TablaEspecies_filled.csv</code> generated in <code>/Salidas</code> and then manually filled, has the information about <em>kingdom</em>, <em>phylum</em> and <em>taxonRank</em> by species identified and is used to complete the information needed to generate de DarwinCore file.</p>
+</div>
+<div id="how-to-run" class="section level2">
+<h2>How to run</h2>
+<ol style="list-style-type: decimal">
+<li><p>Load the libraries that will be used.</p></li>
+<li><p>Consider that in the code vectors names will start with <em>v</em> , dataframes with <em>d</em> , lists with <em>l</em> and functions with <em>fun</em> .</p></li>
+<li><p>Load the data from the folders in <code>/data</code> with the Naira outputs.</p></li>
+<li><p>Standardize the data to create <code>dHexData</code>, a dataframe that joins all the files exported with Naira.</p></li>
+<li><p>Then if needed, create dates groups to define replicates for the occupancy matrix.</p></li>
+<li><p>Then organize the data to create a dataframe with the structure for DarwinCore.</p></li>
+</ol>
 </div>
 <div id="authors-and-contact" class="section level2">
 <h2>Authors and contact</h2>
 <ul>
 <li><strong>María Isabel Arce Plata</strong> - <em>Initial work</em> - <a href="https://github.com/MaIsAp">MaIsAp</a></li>
 <li><strong>Bibiana Gómez</strong> - <em>Data owner</em> -</li>
+</ul>
+</div>
+<div id="license" class="section level2">
+<h2>License</h2>
+<p>This project is licensed under the MIT License.</p>
+</div>
+<div id="acknowledgements" class="section level2">
+<h2>Acknowledgements</h2>
+<ul>
+<li>To the local communities in Montes de Maria that worked as guides and even lend their homes to the researchers for their stay.</li>
+<li>To the researchers from the program of Biodiversity Monitoring and Assessment who took from their time to go to the field and mounted the cameras and then went to unmount them.</li>
 </ul>
 </div>
 </div>
